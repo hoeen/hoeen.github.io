@@ -25,7 +25,9 @@ Turning my attention from space to Earth, now I am interested in solving the imp
 
 ## Publication
 
-M.Sc dissertation paper accepted for publication in Astrophysical Journal - [Quantifying Variability of YSOs in the Mid-IR Over Six Years with NEOWISE](https://arxiv.org/abs/2107.10751)
+M.Sc dissertation paper accepted for publication in Astrophysical Journal:
+
+[Quantifying Variability of Young Stellar Objects in the Mid-infrared Over 6 Years with the Near-Earth Object Wide-field Infrared Survey Explorer](https://ui.adsabs.harvard.edu/abs/2021ApJ...920..132P/abstract)
 
 
 
