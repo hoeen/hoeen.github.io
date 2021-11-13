@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [Codestates]
+
 ---
 
 ## Project 2. Machine Learning - Feedback

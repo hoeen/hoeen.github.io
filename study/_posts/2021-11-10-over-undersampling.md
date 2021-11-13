@@ -1,6 +1,11 @@
 ---
 layout: post
+categories: [Kaggle]
+
+
 ---
+
+
 
 ## Random Oversampling and Undersampling for Imbalanced Classification
 
