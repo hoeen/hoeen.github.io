@@ -55,8 +55,8 @@ menu:
     url:               /projects/
   - title:             Study
     url:               /study/
-#  - title:             Dev-log
-#    url:               /devlog/
+  - title:             Dev-log
+    url:               /devlog/
   - title:             About me
     url:               /about/
 #  - title:             Example*
