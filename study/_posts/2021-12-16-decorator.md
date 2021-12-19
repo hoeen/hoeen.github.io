@@ -94,7 +94,7 @@ AttributeError: 'testname' object has no attribute '__hidden_name'
 
 - __ repr __ 와  __ str __ 의 차이
 
-repr : 해당 객체를 설명해줄 수 있는, 그리고 화면에 출력될 수 있는 문자열 표현을 반환하는 함수.
+repr : 해당 객체를 설명해줄 수 있는, 그리고 화면에 출력될 수 있는 문자열 표현을 반환하는 함수이다.
 
 
 
