@@ -9,9 +9,11 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Wooseok Park (박우석)<br>
+    박우석<br>	
+    Wooseok Park<br>
     Msc Astrophysics in KHU<br>
-    Love to study data and stars
+     
+    데이터 사이언스 공부중<br>코딩하고 공부하고 기록합니다. 
     
     
 
