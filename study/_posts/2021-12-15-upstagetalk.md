@@ -58,4 +58,5 @@ layout: post
 
 - 전체 그림
 
-![img](en-cache://tokenKey%3D%22AuthToken%3AUser%3A50253450%22+2bc271d6-4c85-1f43-c1cf-b47c645720cd+6ccc1342e412b4d206f5b17c319f4a00+https://www.evernote.com/shard/s256/res/f5642811-59e3-6667-073b-950433217870)![img](en-cache://tokenKey%3D%22AuthToken%3AUser%3A50253450%22+2bc271d6-4c85-1f43-c1cf-b47c645720cd+175019b74c89ccb51913da84c0789da9+https://www.evernote.com/shard/s256/res/2874d3ec-d4d7-cc15-d420-5afe0d615ba8)
+![img](/assets/img/study/helmet1.png)![img](/assets/img/study/helmet2.png)
+
