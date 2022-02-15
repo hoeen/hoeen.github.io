@@ -3,7 +3,7 @@ layout:	post
 title: Project Section 2 - Machine Learning
 categories: [projects]
 tag: [machine learning, kaggle]
-sitemap: false
+
 ---
 
 
