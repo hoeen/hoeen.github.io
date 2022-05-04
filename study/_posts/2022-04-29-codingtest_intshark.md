@@ -8,8 +8,6 @@ layout: post
 
 청소년 상어 문제 풀이 - 리스트 차원에 따른 깊은복사, 얕은복사의 차이 
 
-<br>
-
 ## 문제 설명
 
 [링크](https://www.acmicpc.net/problem/19236)
