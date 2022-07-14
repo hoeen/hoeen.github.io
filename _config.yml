@@ -59,8 +59,8 @@ menu:
     url:               /devlog/
   - title:             About me
     url:               /about/
-#  - title:             Example*
-#    url:               /example/
+  - title:             Resume
+    url:               /resume/
 #  - title:             Documentation*
 #    url:               /docs/
 
@@ -96,7 +96,7 @@ remote_theme: hydecorp/hydejack@v9
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/blog/daniel_space_crop.jpg
+accent_image:          /main_images/daniel_space_crop.jpg
 accent_color:          rgb(79,177,186)
 
 # This is used for the `theme-color` meta tag,
@@ -217,7 +217,7 @@ hydejack:
   # Set to true to disable the built-in search functionality.
   # Note that search is disabled during local use to save on build time.
   # Run Jekyll with the `JEKYLL_ENV` environment variable set to `production` to enable.
-  no_search:           false
+  no_search:           true
 
   # Set to `true` if you do not want parts of the css inlined in <head/>
   # This will increase site build speed dramatically!

@@ -58,5 +58,5 @@ layout: post
 
 - 전체 그림
 
-![img](/assets/img/study/helmet1.png)![img](/assets/img/study/helmet2.png)
+![img](/study/images/helmet1.png)![img](/study/images/helmet2.png)
 
