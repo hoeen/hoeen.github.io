@@ -4,3 +4,4 @@
 ### Data Literacy
 ![img](../images/dataliteracy.png)
 
+벤치마킹 연습
