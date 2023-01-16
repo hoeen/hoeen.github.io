@@ -4,4 +4,4 @@
 ![](../images/udut_mc.png)
 - KL Divergence?
 - 정보 엔트로피? 
-- pretraining을 통해 embedding matrix가 여러 정보를 학습하도록 함.
+- pretraining을 통해 embedding matrix가 여러 정보를 학습하도록 함.˜
