@@ -149,5 +149,15 @@ positional encoding의 공식은 논문의 section 3.5에 나와 있으며 이�
 
 ## 인코더 마무리 (The Residuals)
 
+self-attention 및 feed-forward NN은 앞서 이야기한 과정에 덧붙여 **residual connection** 그리고 **layer-normalization**을 거쳐 다음 층으로 진행된다. 
 
+![](../images/transformer_resideual_layer_norm.png)
+
+벡터의 전달까지 포함하여 나타내면 다음과 같다.
+
+![](../images/transformer_resideual_layer_norm_2.png)
+
+이러한 과정은 디코더 내의 각 층에서도 동일하며 2개의 stacked 된 인코더와 디코더로 구성된 Transformer은 정리하여 다음과 같이 나타낼 수 있다.
+
+![](../images/transformer_resideual_layer_norm_3.png)
 
