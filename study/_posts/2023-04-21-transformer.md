@@ -140,7 +140,7 @@ Transformer에서는 위치 정보를 주기 위해 각 input embedding에 벡�
 
 ![](../images/transformer_positional_encoding_large_example.png)
 
-위의 경우는 Transformer2Transformer에서 나오는 positional encoding이고, 실제 Attention is all you need 논문에서는 아래와 같이 sine, cosine이 weaving(서로 짜여 있는) 구조로 구현했다. 
+위의 경우는 Transformer2Transformer에서 나오는 positional encoding이고, 실제 Attention is all you need 논문에서는 아래와 같이 sine, cosine이 서로 짜여 있는 구조 (weaving) 로 구현했다. 
 
 ![](../images/attention-is-all-you-need-positional-encoding.png)
 
@@ -160,4 +160,36 @@ self-attention 및 feed-forward NN은 앞서 이야기한 과정에 덧붙여 **
 이러한 과정은 디코더 내의 각 층에서도 동일하며 2개의 stacked 된 인코더와 디코더로 구성된 Transformer은 정리하여 다음과 같이 나타낼 수 있다.
 
 ![](../images/transformer_resideual_layer_norm_3.png)
+
+
+## 디코더 (The Decoder Side)
+
+인코더 부분에서 우리가 다뤄야할 거의 모든 개념들을 이야기했기 때문에 디코더 부분을 이해하는 것은 어렵지 않다. 그래도 디코더 부분이 어떻게 동작하는 지 한번 살펴보자.
+
+맨 마지막 디코더 (top encoder)에서 나온 output은 self-attention에 의해 Key, Value 벡터로 변환되고 이것은 디코더에만 있는 층인 encoder-decoder attention layer에서 이용되어 인코더의 self-attention처럼 디코더가 input sequence에서 적절한 위치에 집중할 수 있게 도와준다.
+
+![](../images/transformer_decoding_1.gif)
+
+디코더에서의 작업은 최종 output을 만들기까지 반복된다. 첫 단계에서의 output은 다시 다음 단계에서 디코더에게 input으로 들어가고, 이것이 디코더의 output이 종료됨을 알리는 시그널에 도달할때까지 반복하여 이루어진다. 디코더 output으로 생성된 글자는 다음 단계에서 디코더 input으로 들어갈 때 인코더에서와 같이 embedding + positional encoding이 이루어진다.
+
+![](../images/transformer_decoding_2.gif)
+
+디코더가 인코더와 비교해서 갖는 중요한 차이점은 self-attention layer에 있는데, 디코더에서는 오직 output 위치의 이전 위치만 attention 할 수 있다는 것이다. 다음 위치들에 나올 단어를 모르는 상태로 attention이 이루어지며 이를 수행하기 위해 디코더에서 나온 output이 최종 softmax로 들어가기 전에 ```-inf```로 output 위치 및 이후 위치를 모두 masking한다.
+
+디코더의 encoder-decoder attention은 multiheaded self-attention으로 인코더에서와 동일하지만, **Query 벡터만 이전 디코더에서 가져오며 Key, Value 벡터는 인코더의 output에서 가져온다**는 것이 차이점이다.
+
+## The Final Linear and Softmax Layer
+
+디코더가 output으로 내놓은 벡터를 가지고 최종적으로 linear layer과 softmax layer을 거치면서 output 단어가 나오게 된다. 
+
+먼저 linear layer는 디코더에서 나온 output vector를 가지고 모든 단어 공간으로 사상시킨다. 따라서 output vector는 linear layer를 통해 훨씬 긴 벡터로 변환되며 이를 logits vector이라 한다. 예를 들어 1만 개의 단어를 모델에게 학습시켰다면 디코더 output vector를 가지고 모든 단어에 대하여 나올 수 있는 점수 (logit)을 담아 길이 1만의 logits vector벡터 형태로 환산하게 된다.
+
+그 다음 softmax layer에 들어가면서 이 점수들을 합이 1인 확률값으로 변환하며 가장 확률이 큰 단어가 선택되어 나오는 것으로 output 작업이 마무리된다.
+
+
+## 마무리
+원문 글에서 이 뒷부분은 일반적인 학습 및 loss 계산에 대한 부분이므로 생략합니다.  
+
+직접 정리를 하니 Transformer의 구조가 훨씬 잘 이해되는 것 같습니다. 또한 보시는 분들에게도 많은 도움이 되길 바랍니다!
+
 
