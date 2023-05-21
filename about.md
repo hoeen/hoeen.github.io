@@ -2,6 +2,7 @@
 layout: about
 title: About me
 ---
+[CV](resume.md)
 # Wooseok Park, 박우석
 
 
