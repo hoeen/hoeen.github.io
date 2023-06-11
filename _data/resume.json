@@ -20,21 +20,21 @@
         "url": "https://github.com/hoeen"
       }
     ],
-    "summary": "협업 능력과 꾸준함이 강점인 데이터 과학자, 박우석입니다. 8명의 공저자들과 함께 관측 데이터 분석 결과를 SCIE급 저널에 1저자로 기고하였으며, 5인 팀 프로젝트로 추천 시스템 서비스를 구축, 실사용자 확보 및 A/B 테스트를 수행한 경험이 있습니다. 현재는 추천 시스템에 관심을 갖고 공부하고 있으며, 지속적인 Kaggle 대회 참여로 실전 데이터 분석 및 예측에도 계속 도전하고 있습니다."
+    "summary": "협업 능력과 꾸준함이 강점인 데이터 과학자, 박우석입니다. 8명의 공저자들과 함께 관측 데이터 분석 결과를 SCIE급 저널에 1저자로 기고하였으며, 5인 팀 프로젝트로 추천 시스템 서비스를 구축, 실사용자 확보 및 A/B 테스트를 수행한 경험이 있습니다. 현재는 추천 시스템과 그래프 이론에 관심을 갖고 공부하고 있으며, 지속적인 Kaggle 대회 참여로 실전 데이터 분석 및 예측에도 계속 도전하고 있습니다."
   },
   "work": [
     {
-      "company": "[repo]",
+      "company": "[Wrap-up Report]",
       "position": "길동국사 - 한국사능력검정시험 기출문제 개인화 추천 서비스",
-      "website": "https://github.com/boostcampaitech4lv23recsys1/level3_productserving-level3-recsys-03",
+      "website": "https://www.notion.so/monblanc/Gildong-K-History-Wrap-UP-Report-9babb5800e584116bd9cdfb2eb27aa61",
       "startDate": "2023-01-01",
       "endDate": "2023-02-14",
       "summary": "효율적인 한국사능력검정시험 학습을 제공하고자 유저 개인별 풀이 기록을 학습하여 유저에게 틀릴 가능성이 높은 문제를 추천하는 서비스입니다.",
       "highlights": [
-        "백엔드 및 추천 모델링을 담당하여 추천 시스템 패키지인 RecBole을 이용, SASRec, EASE 를 user-based 추천 모델로 서빙",
-        "문제 해설에서 형태소를 추출 및 임베딩하여 item-based 이웃기반 협업필터링 모델을 구현하였고, 이를 통해 신규 사용자에게도 합리적인 추천을 제공하여 Cold-Start 문제를 해결",
-        "프로젝트 기간 1달간 누적 유저 190명, 누적 문제풀이 수 12000건 이상을 달성",
-        "A/B test를 통해 모델 추천 문제의 사용자 오답률이 높음을 확인하여 틀릴 문제를 추천하는 모델의 효율성을 검증함"
+        "백엔드 및 추천 모델링을 담당하여 추천 시스템 패키지인 RecBole을 이용해 넓은 범위의 추천 모델 오프라인 테스팅을 수행하고 SASRec, EASE 를 user-based 추천 모델로 서빙",
+        "신규 유저의 Cold-Start 문제를 해결하기 위해 해설 키워드에서 형태소를 추출 및 임베딩하여 문제끼리의 유사도를 틀린 문제와 유사한 문제를 제공하는 컨텐츠 기반 추천모델을 구현",
+        "프로젝트 기간 동안 누적 유저 180명, 누적 문제풀이 수 12000건 이상 달성",
+        "A/B test를 통해 모델 추천 문제의 사용자 오답률이 높음을 확인하여 틀릴 문제를 추천하는 모델의 효용성을 온라인 테스트로 검증함"
       ]
     },
     {
@@ -43,13 +43,26 @@
       "website": "https://github.com/hoeen/student-gameplay-prediction",
       "startDate": "2023-05-01",
       "endDate": "",
-      "summary": "Kaggle에서 주최하는 Predict Student Performance from Game Play 대회에 참여하여 학습용 게임 로그 기록을 바탕으로 유저의 정답 여부를 예측하였습니다. 유저의 게임 기록을 순서대로 추적하는 것이 학습 상태 파악에 적합하다고 판단, sequential model을 이용해 예측을 시도하였습니다.",
+      "summary": "[진행중] Kaggle에서 주최하는 Predict Student Performance from Game Play 대회에 참여하여 학습용 게임 로그 기록을 바탕으로 게임에서 등장하는 18개 질문에 대한 유저의 정답 여부를 예측하였습니다. ",
       "highlights": [
+        "데이터-라벨이 일대일 대응이 아닌 상황이므로 각 질문에 대응하는 18개의 CatBoost 모델을 학습, 실시간 데이터 api에 대응하여 추론하도록 구현",
         "LSTM을 이용하여 사용자의 게임 로그를 embedded sequence data로 변환, 정답여부를 예측하는 시계열 모델을 구현",
-        "기존 LightGBM 모델 대비 LSTM으로 CV f1-score를 0.687 -> 0.76으로 향상"
+        "F1-score 성능지표를 Baseline 모델의 0.6과 비교하여 LSTM으로 0.67 달성 및 CatBoost로 0.693 달성"
       ]
     },
-    ""
+    {
+      "company": "[Wrap-up Report]",
+      "position": "Deep Knowledge Tracing 대회 (네이버 부스트캠프 과정)",
+      "website": "https://www.notion.so/monblanc/Deep-Knowledge-Tracing-76a1d60831c944b3a11b25c7aa51d6ab",
+      "startDate": "2022-12-01",
+      "endDate": "2023-01-01",
+      "summary": "학생 문제풀이 기록을 바탕으로 마지막 문제의 정답 여부를 예측하는 대회입니다. EDA 및 특성공학, CV 테스트 및 모델링을 담당하였습니다.",
+      "highlights": [
+        "SHAP value를 이용해 머신러닝 모델에서의 feature 기여도를 시각화하고 이에 기반한 feature selection을 적용",
+        "기존의 유저별 Cross-Validation과 달리 모든 유저를 활용하고 마지막 t번째 문제를 validation으로 활용하는 Sequential CV를 구현하여 성능 10% 향상",
+        "Optuna를 이용한 하이퍼파라미터 튜닝 및 LightGBM 3개를 soft-voting 방식으로 앙상블하여 평가지표인 AUROC를 0.82에서 0.8597까지 향상"
+      ]
+    }
   ],
   "education": [
     {
@@ -64,6 +77,20 @@
         "Memory-based / Model-based Collaborative Filtering",
         "Data Visualization",
         "Prototyping and Servicing AI"
+      ]
+    },
+    {
+      "institution": "Codestates",
+      "area": "AI, RecSys",
+      "studyType": "AI Bootcamp",
+      "startDate": "2021-09-06",
+      "endDate": "2022-04-06",
+      "gpa": "",
+      "courses": [
+        "Algorithm / Data Structure",
+        "Statistics",
+        "Data Analysis / Modeling",
+        "Data Engineering / Deploying application"
       ]
     },
     {
@@ -87,12 +114,13 @@
       "publisher": "Wooseok Park",
       "releaseDate": "2021-10-10",
       "website": "https://github.com/hoeen/WISE_YSO_variability_analysis",
-      "summary": "6년간 축적된 원시성(탄생 초기의 별) 밝기변화 sequence data를 정제 후 통계적으로 분석하여 별의 진화 단계에 따른 밝기변화 특징을 밝혀내고 분류하였습니다. 연구 결과로 초기의 원시성일수록 밝기변화가 불규칙하며 그 강도가 큼을 밝혀내었습니다.  ",
+      "summary": "근지구천체(소행성 등) 관측 적외선 우주망원경의 데이터를 이용하여 훨씬 먼 1000광년 거리의 원시성(탄생 초기의 별) 약 6000개의 데이터를 발굴, 정제하였고 밝기변화 형태를 최초로 6가지로 분류하였습니다. 분류 형태 및 밝기변화를 주기성, 진폭, 불확실도 등 다양한 지표를 통해 설명하였고, 진화 초기의 원시성에서 밝기변화가 극심하며 후기로 진화할수록 밝기변화가 줄어듦을 관측적으로 증명하였습니다. ",
       "highlights": [
-        "신호에서의 주기성 탐지 기법 중 하나인 Lomb-Scargle Periodogram으로 밝기변화의 주기성 여부를 탐지",
-        "밝기변화를 수치화하여 새로운 feature를 생성 및 이를 이용해 원시성 밝기변화의 형태를 분류",
-        "장기적으로 축적된 raw 데이터 속에서 유의미한 인사이트를 발견하고 새롭게 정제하여 데이터 재배포",
-        "1저자로 미국 천체물리학 저널에 논문 투고. 20회 이상 인용 및 1000회 이상 다운로드 성과"
+        "Resampling으로 관측 데이터 노이즈를 억제하여 밝기변화를 일으키는 원시성을 찾아냄",
+        "밝기변화의 주기성, 선형 피팅, 에러 대비 불확실도 등 다수의 새로운 지표 생성하여 밝기변화를 다각도로 수치화, 이를 이용해 원시성 밝기변화의 형태를 선형, 곡선형, 불규칙형 등 6가지로 분류",
+        "분류 결과를 원시성의 규명된 진화단계와 대조하여 heatmap, scatter plot 등 20가지의 시각화로 진화 단계별 밝기변화 형태를 설명함",
+        "6년간의 장기적으로 축적된 데이터를 발굴 및 유의미한 인사이트를 발견하고 새롭게 정제하여 데이터를 재배포하는 경험",
+        "연구 결과를 1저자로 미국 천체물리학 저널에 논문 투고하여 25회 이상 인용되는 성과를 거둠"
       ]
     }
   ],
@@ -109,7 +137,8 @@
       "name": "ML optimization & ensemble",
       "level": "Intermediate",
       "keywords": [
-        "Pytorch"
+        "Pytorch",
+        "wandb"
       ]
     },
     {
@@ -126,6 +155,14 @@
         "Git",
         "Notion",
         "Slack"
+      ]
+    },
+    {
+      "name": "Database",
+      "level": "Beginner",
+      "keywords": [
+        "MySQL",
+        "PostgreSQL"
       ]
     }
   ],
